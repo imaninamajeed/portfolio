@@ -1,11 +1,19 @@
+/* Variables */
+:root {
+    --section-padding: 10rem 0;
+    --navbar-padding: 1rem 0;
+    --footer-padding: 2rem 0;
+    --font-primary: 'Poppins', sans-serif;
+}
+
 /* Body styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-primary);
 }
 
 /* Navbar styles */
 .navbar {
-    padding: 1rem 0;
+    padding: var(--navbar-padding);
 }
 
 .navbar-brand {
@@ -18,27 +26,23 @@ body {
     margin-right: 1rem;
 }
 
-/* About section styles */
-#about {
-    text-align: center;
-    padding: 4rem 0;
-}
-
-/* Projects section styles */
-#projects {
-    text-align: center;
-    padding: 4rem 0;
-}
-
-/* Contact section styles */
+/* Section styles */
+#home,
+#about,
+#projects,
 #contact {
     text-align: center;
-    padding: 4rem 0;
+    padding: var(--section-padding);
 }
 
 /* Footer styles */
 footer {
     background-color: #f8f9fa;
-    padding: 2rem 0;
+    padding: var(--footer-padding);
     text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 80px;
 }
