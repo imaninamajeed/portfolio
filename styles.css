@@ -1,6 +1,7 @@
 /* Variables */
 :root {
     --section-padding: 10rem 0;
+    --section-abt-padding: 2.5rem 0;
     --navbar-padding: 1rem 0;
     --footer-padding: 2rem 0;
     --font-primary: 'Poppins', sans-serif;
@@ -9,6 +10,8 @@
 /* Body styles */
 body {
     font-family: var(--font-primary);
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 /* Navbar styles */
@@ -35,6 +38,16 @@ body {
     padding: var(--section-padding);
 }
 
+/* About Section styles */
+#about-me {
+    padding: var(--section-abt-padding);
+}
+
+/* Container styles */
+#about-me-container {
+    padding: var(--section-abt-padding);
+}
+
 /* Footer styles */
 footer {
     background-color: #f8f9fa;
@@ -45,4 +58,92 @@ footer {
 /* Heading styles */
 h1 {
     font-size: 80px;
+}
+
+.project-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Contact Info styles */
+.contact-info {
+    background-color: #f8f9fa;
+    padding: 40px 20px; /* Adjust padding as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #007bff;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+/* Contact Form styles */
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
 }
