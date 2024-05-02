@@ -147,3 +147,19 @@ h1 {
 .contact-form input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+@media (max-width: 900px) {
+    h1 {
+        padding: 5px;
+        font-size: 40px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+
+    .about-section{
+        text-align: center;
+        padding: 0;
+    }
+}
