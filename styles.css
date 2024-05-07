@@ -148,6 +148,21 @@ h1 {
     background-color: #0056b3;
 }
 
+.card {
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    height: 200px; /* Set the desired height for the images */
+    object-fit: cover; /* Ensure the images maintain their aspect ratio */
+} 
+
 @media (max-width: 900px) {
     h1 {
         padding: 5px;
